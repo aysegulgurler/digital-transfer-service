@@ -1,0 +1,158 @@
+{
+  "info": {
+    "_postman_id": "313089e6-b24b-4a93-bc7c-0df44cd2bdac",
+    "name": "Digital Transfer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/api/transfers/999",
+      "id": "a1cef414-810d-4f55-92a8-8e162246de42",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transfers/999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transfers",
+            "999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "1041d3e0-d349-4b36-bfcd-d6881f962638",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"senderIban\": \"TR1000000000000001\",\r\n  \"receiverIban\": \"TR2000000000000002\",\r\n  \"amount\": 1500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transfers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transfers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "ede4207f-529c-4c0b-bda7-ff0ae515c076",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"senderIban\": \"TR1000000000000001\",\r\n  \"receiverIban\": \"TR2000000000000002\",\r\n  \"amount\": 3000.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transfers/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transfers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "8e5a9212-c2c7-4aa7-96b4-a3610b90896d",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"amount\": 2500.00\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transfers/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transfers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
